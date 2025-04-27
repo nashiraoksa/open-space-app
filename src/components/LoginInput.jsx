@@ -7,10 +7,12 @@ function LoginInput({ login }) {
   const [password, onPasswordChange] = useInput('');
 
   return (
-    <form className="login-input">
-      <input type="text" value={id} onChange={onIdChange} placeholder="Username" />
-      <input type="password" value={password} onChange={onPasswordChange} placeholder="Password" />
-      <button type="button" onClick={() => login({ id, password })}>Login</button>
+    <form className='login-input'>
+      <input type='text' value={id} onChange={onIdChange} placeholder='Username' />
+      <input type='password' value={password} onChange={onPasswordChange} placeholder='Password' />
+      <button type='button' onClick={() => login({ id, password })}>
+        Login
+      </button>
     </form>
   );
 }
